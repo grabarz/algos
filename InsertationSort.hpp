@@ -14,13 +14,10 @@ namespace Algos
 template <typename I>
 void InsertationSort(I first, I last)
 {
-	I it = first;
-
-	++it;
-	while (it < last)
+	for (auto j = first + 1; j < last; ++j)
 	{
-		auto key = *it;
-		auto i = it - 1;
+		auto key = *j;
+		auto i = j - 1;
 
 		while (i >= first && *i > key)
 		{
@@ -28,7 +25,6 @@ void InsertationSort(I first, I last)
 			--i;
 		}
 		*(i + 1) = key;
-		++it;
 	}
 }
 //----------------------------------------------------------------------------------------------------

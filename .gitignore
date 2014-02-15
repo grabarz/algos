@@ -8,8 +8,6 @@
 *.exe
 *.dll
 
-tests
-
 TAGS
 GTAGS
 GPATH

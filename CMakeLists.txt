@@ -18,7 +18,8 @@ add_library (Algos SHARED
 	xxx.cpp)
 
 add_library (AlgosTests SHARED
-	tests/InsertationSortTests.cpp)
+	tests/InsertationSortTests.cpp
+	tests/MergeSortTests.cpp)
 
 add_executable (tests tests.cpp)
 add_executable (bench bench.cpp)

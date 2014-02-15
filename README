@@ -1,1 +1,2 @@
-Some basic algorithms implemented by using boost.
+Basic algorithms and data structures implemented by using C++11, Boost libraries and for
+some cases CUDA.
