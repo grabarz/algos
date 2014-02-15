@@ -20,11 +20,11 @@ BOOST_AUTO_TEST_CASE(Merge_whenSortedMultipleElementsVectorsPassed_sortsAndMerge
 
 	Merge(left.begin(), left.end(), right.begin(), right.end(), output.begin());
 
-//	BOOST_CHECK(output == result);
+	BOOST_CHECK(output == result);
 
 	Merge(right.begin(), right.end(), left.begin(), left.end(), output.begin());
 
-//	BOOST_CHECK(output == result);
+	BOOST_CHECK(output == result);
 }
 //----------------------------------------------------------------------------------------------------
 
