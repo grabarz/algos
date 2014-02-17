@@ -23,7 +23,7 @@ void MergeSort(I first, I last, I buff) noexcept
 	if (size == 1)
 		return;
 
-	auto half = size / 2;
+	auto half = (size + 1) / 2;
 
 	MergeSort(first, first + half, buff);
 	MergeSort(first + half, last, buff + half);
@@ -40,7 +40,7 @@ void MergeSort(I first, I last, I buff, std::size_t threads)
 	if (size == 1)
 		return;
 
-	auto half = size / 2;
+	auto half = (size + 1) / 2;
 
 	if (threads > 1)
 	{
