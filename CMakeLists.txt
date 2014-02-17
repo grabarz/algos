@@ -2,7 +2,7 @@ cmake_minimum_required (VERSION 2.8.9)
 
 project (Algos)
 set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g -std=c++11 -stdlib=libc++ -I.")
-include_directories (./)
+include_directories (./include)
 
 # pkgconfig
 find_package(PkgConfig)
@@ -15,7 +15,7 @@ message("** Boost Libraries: ${Boost_LIBRARY_DIRS}")
 message("** Boost Libraries: ${Boost_LIBRARIES}")
 
 add_library (Algos SHARED
-	xxx.cpp)
+	src/xxx.cpp)
 
 add_library (AlgosTests SHARED
 	tests/InsertationSortTests.cpp

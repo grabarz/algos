@@ -2,7 +2,7 @@
 
 #include <boost/test/unit_test.hpp>
 
-#include <InsertationSort.hpp>
+#include <Algos/InsertationSort.hpp>
 //----------------------------------------------------------------------------------------------------
 
 BOOST_AUTO_TEST_SUITE(InsertationSortTests)
